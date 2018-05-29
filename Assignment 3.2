@@ -1,0 +1,19 @@
+
+
+b)outerlist = range(1,3)
+innerlist = range(1,3)
+letters = ['x','y','z']
+print([outer*inner*letter for outer in outerlist for inner in innerlist for letter in letters]) 
+
+c)n = [j * i for j in "xyz" for i in range(1, 5)]
+print(str(n))
+
+d)o = [j * 2 ** int(i/2) for i in range(1, 5)  for j in "xyz"]
+print(str(o))
+
+e)q = [[i] for j in range(2,5) for i in range(j,j+3)]
+print(str(q))
+
+f)outerlist=[1,2,3]
+innerlist=[1,2,3]
+print([(j,i) for i in outerlist for j in innerlist])
